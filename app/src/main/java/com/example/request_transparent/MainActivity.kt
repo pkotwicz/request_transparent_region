@@ -29,8 +29,6 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed(object:Runnable{
             override fun run() {
-                var i = getWindow().getAttributes().flags and  WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED
-                android.util.Log.e("ABCD", "Flags " + i)
                 container.requestTransparentRegion(layout2)
                 layout2.invalidate()
                 layout3.invalidate()
